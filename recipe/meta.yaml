@@ -27,6 +27,7 @@ requirements:
     - pandas
     - numpy >=1.15,!=1.19.4
     - ujson
+    - cmdstan
 
 test:
   imports:
