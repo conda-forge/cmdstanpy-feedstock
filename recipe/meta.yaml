@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://github.com/stan-dev/cmdstanpy/archive/v{{ version }}.tar.gz
-  sha256: 285256f6a2d730ed4f0560f19e5a003eeb38ce3010c5b3c900b3be2efb6767e3
+  sha256: c6b8e6236d923ccdc54f19eb9c19a70a17f0ed5c1aa3bd9e81a264e0390dfcd6
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
@@ -27,18 +27,12 @@ requirements:
     - pandas
     - numpy >=1.15,!=1.19.4
     - ujson
+    - cmdstan
 
-test:
-  imports:
-    - cmdstanpy
-  commands:
-    - pip check
-  requires:
-    - pip
 
 about:
   home: https://mc-stan.org/users/interfaces/cmdstan.html
-  dev_url: https://github.com/stan-dev/cmdstan
+  dev_url: https://github.com/stan-dev/cmdstanpy
   doc_url: https://cmdstanpy.readthedocs.io
   summary: |
     CmdStanPy is a lightweight interface to Stan for Python users which

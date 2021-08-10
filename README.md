@@ -12,7 +12,7 @@ provides the necessary objects and functions to compile a Stan program
 and fit the model to data using CmdStan.
 
 
-Development: https://github.com/stan-dev/cmdstan
+Development: https://github.com/stan-dev/cmdstanpy
 
 Documentation: https://cmdstanpy.readthedocs.io
 
