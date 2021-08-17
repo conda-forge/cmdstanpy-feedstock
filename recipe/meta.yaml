@@ -1,5 +1,5 @@
 {% set name = "cmdstanpy" %}
-{% set version = "0.9.76" %}
+{% set version = "0.9.77" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://github.com/stan-dev/cmdstanpy/archive/v{{ version }}.tar.gz
-  sha256: c6b8e6236d923ccdc54f19eb9c19a70a17f0ed5c1aa3bd9e81a264e0390dfcd6
+  sha256: c6ad047f480e3e2816595d7697e137840a1bbc7829ff80357340a9de86202f39
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
