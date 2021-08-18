@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/stan-dev/cmdstanpy/archive/v{{ version }}.tar.gz
-  sha256:3cb1f47abbcb29bf34b64b622c1bffbcda4ce9300c0650b41b531df32911b705
+  sha256: 3cb1f47abbcb29bf34b64b622c1bffbcda4ce9300c0650b41b531df32911b705
 
 build:
   number: 0
