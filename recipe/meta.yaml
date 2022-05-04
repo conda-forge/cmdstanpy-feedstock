@@ -35,7 +35,6 @@ test:
   commands:
     - pip check
     - install_cmdstan --help
-    - install_cxx_toolchain --help
   requires:
     - pip
 
