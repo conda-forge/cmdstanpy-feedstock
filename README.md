@@ -1,11 +1,11 @@
-About cmdstanpy
-===============
+About cmdstanpy-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/cmdstanpy-feedstock/blob/main/LICENSE.txt)
 
 Home: https://mc-stan.org/users/interfaces/cmdstan.html
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/cmdstanpy-feedstock/blob/main/LICENSE.txt)
 
 Summary: CmdStanPy is a lightweight interface to Stan for Python users which
 provides the necessary objects and functions to compile a Stan program
