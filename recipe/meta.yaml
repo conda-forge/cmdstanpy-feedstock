@@ -28,7 +28,7 @@ requirements:
     - numpy >=1.21
     - cmdstan
     - tqdm
-    - stanio
+    - stanio~=0.3.0
 
 
 about:
