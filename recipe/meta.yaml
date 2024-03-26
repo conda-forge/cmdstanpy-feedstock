@@ -1,5 +1,5 @@
 {% set name = "cmdstanpy" %}
-{% set version = "1.2.1" %}
+{% set version = "1.2.2" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/stan-dev/cmdstanpy/archive/v{{ version }}.tar.gz
-  sha256: b2a7292954fbcfa9d6560a5617db6017e1b9b9763df1fba896d3f9e73651aa10
+  sha256: 58ac5d651a60f8d5c5f8336b7eb64bac3b1ee011917a90a14165a0a8ff1bd7a0
 
 build:
   number: 0
@@ -28,7 +28,7 @@ requirements:
     - numpy >=1.21
     - cmdstan
     - tqdm
-    - stanio ~=0.3.0
+    - stanio >=0.4.0,<2.0.0
 
 
 about:
