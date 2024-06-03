@@ -153,6 +153,3 @@ Feedstock Maintainers
 * [@WardBrian](https://github.com/WardBrian/)
 * [@maresb](https://github.com/maresb/)
 
-
-<!-- dummy commit to enable rerendering -->
-
