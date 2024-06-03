@@ -11,7 +11,7 @@ source:
   sha256: 58ac5d651a60f8d5c5f8336b7eb64bac3b1ee011917a90a14165a0a8ff1bd7a0
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
@@ -26,7 +26,7 @@ requirements:
     - python >=3.8
     - pandas
     - numpy >=1.21
-    - cmdstan
+    - cmdstan <2.35.0
     - tqdm
     - stanio >=0.4.0,<2.0.0
 
