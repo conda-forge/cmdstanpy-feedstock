@@ -1,5 +1,5 @@
 {% set name = "cmdstanpy" %}
-{% set version = "1.2.2" %}
+{% set version = "1.2.3" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://github.com/stan-dev/cmdstanpy/archive/v{{ version }}.tar.gz
-  sha256: 58ac5d651a60f8d5c5f8336b7eb64bac3b1ee011917a90a14165a0a8ff1bd7a0
+  sha256: f014c170afcd2261478f89d6f469d4375e701e0eb27dc3df02fffd8e54ba6a56
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
@@ -26,7 +26,7 @@ requirements:
     - python >=3.8
     - pandas
     - numpy >=1.21
-    - cmdstan <2.35.0
+    - cmdstan
     - tqdm
     - stanio >=0.4.0,<2.0.0
 
