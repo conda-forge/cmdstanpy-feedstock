@@ -26,7 +26,7 @@ requirements:
     - python >=3.8
     - pandas
     - numpy >=1.21
-    - cmdstan <2.35.0
+    - cmdstan
     - tqdm
     - stanio >=0.4.0,<2.0.0
 
