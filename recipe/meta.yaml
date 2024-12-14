@@ -22,9 +22,9 @@ requirements:
   host:
     - pip
     - setuptools
-    - python >=3.8
+    - python {{ python_min }}
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - pandas
     - numpy >=1.21
     - cmdstan
