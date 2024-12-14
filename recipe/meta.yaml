@@ -1,5 +1,5 @@
 {% set name = "cmdstanpy" %}
-{% set version = "1.2.4" %}
+{% set version = "1.2.5" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/stan-dev/cmdstanpy/archive/v{{ version }}.tar.gz
-  sha256: 1d3d9809c07e852e335d03e2af3d0e94a38d9109f5761b7ff85089b610f6f452
+  sha256: 0f0ff304f40740d168956f2343e95f9af6c9fba5b50d49683bcb95dc2278a46e
 
 build:
   number: 0
@@ -21,15 +21,19 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.8
+    - setuptools
+    - python {{ python_min }}
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - pandas
     - numpy >=1.21
     - cmdstan
     - tqdm
     - stanio >=0.4.0,<2.0.0
 
+test:
+  requires:
+    - python {{ python_min }}
 
 about:
   home: https://mc-stan.org/users/interfaces/cmdstan.html
